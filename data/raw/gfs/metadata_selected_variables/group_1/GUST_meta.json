@@ -1,0 +1,20 @@
+{
+    "product": "24-hour Forecast",
+    "param_description": "Wind speed (gust)",
+    "end_date": 202203061200,
+    "level": null,
+    "native_format": "WMO_GRIB2",
+    "gridproj": "latLon",
+    "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+    "param": "GUST",
+    "levels": [
+        {
+            "level_description": "Ground or water surface",
+            "level": "SFC",
+            "level_value": "0"
+        }
+    ],
+    "GCMD_uuid": "10685919-bc01-43e7-901a-b62ac44627f3",
+    "units": "m s^-1",
+    "start_date": 201501160000
+}

@@ -1,0 +1,59 @@
+{
+    "product": "24-hour Forecast",
+    "param_description": "Pressure",
+    "end_date": 202203061200,
+    "level": null,
+    "native_format": "WMO_GRIB2",
+    "gridproj": "latLon",
+    "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+    "param": "PRES",
+    "standard_name": "air_pressure",
+    "levels": [
+        {
+            "level_description": "Ground or water surface",
+            "level": "SFC",
+            "level_value": "0"
+        },
+        {
+            "level_description": "Tropopause",
+            "level": "TRO",
+            "level_value": "0"
+        },
+        {
+            "level_description": "Maximum wind level",
+            "level": "MWSL",
+            "level_value": "0"
+        },
+        {
+            "level_value": "2000",
+            "level_description": "Potential vorticity surface",
+            "level": "PVL",
+            "units": "10^-9 deg K m^2 kg^-1 s^-1"
+        },
+        {
+            "level_value": "-2000",
+            "level_description": "Potential vorticity surface",
+            "level": "PVL",
+            "units": "10^-9 deg K m^2 kg^-1 s^-1"
+        },
+        {
+            "level_description": "Convective cloud top level",
+            "level": "CCTL",
+            "level_value": "0"
+        },
+        {
+            "level_description": "Convective cloud bottom level",
+            "level": "CCBL",
+            "level_value": "0"
+        },
+        {
+            "level_value": "80",
+            "level_description": "Specified height above ground",
+            "level": "HTGL",
+            "units": "m"
+        }
+    ],
+    "GCMD_uuid": "a5aa7055-642d-4442-9b4b-76a759e15257",
+    "units": "Pa",
+    "start_date": 201501160000
+}

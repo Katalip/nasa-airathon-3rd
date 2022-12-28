@@ -1,0 +1,22 @@
+{
+    "product": "24-hour Forecast",
+    "param_description": "Dewpoint temperature",
+    "end_date": 202203061200,
+    "level": null,
+    "native_format": "WMO_GRIB2",
+    "gridproj": "latLon",
+    "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+    "param": "DPT",
+    "standard_name": "dew_point_temperature",
+    "levels": [
+        {
+            "level_value": "2",
+            "level_description": "Specified height above ground",
+            "level": "HTGL",
+            "units": "m"
+        }
+    ],
+    "GCMD_uuid": "731beb11-9418-40ec-8f2c-c4b320e8231a",
+    "units": "K",
+    "start_date": 201501160000
+}

@@ -1,0 +1,280 @@
+{
+    "product": "24-hour Forecast",
+    "param_description": "Specific humidity",
+    "end_date": 202203061200,
+    "level": null,
+    "native_format": "WMO_GRIB2",
+    "gridproj": "latLon",
+    "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+    "param": "SPF H",
+    "standard_name": "specific_humidity",
+    "levels": [
+        {
+            "level_value": "1000",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "975",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "950",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "925",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "900",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "850",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "800",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "750",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "700",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "650",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "600",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "550",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "500",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "450",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "400",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "350",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "300",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "250",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "200",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "150",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "100",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "70",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "50",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "30",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "20",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "10",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "2",
+            "level_description": "Specified height above ground",
+            "level": "HTGL",
+            "units": "m"
+        },
+        {
+            "level_value": "5",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "2",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "1",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0,30",
+            "level_description": "Level at specified pressure difference from ground to level",
+            "level": "SPDL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "3",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "7",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "80",
+            "level_description": "Specified height above ground",
+            "level": "HTGL",
+            "units": "m"
+        },
+        {
+            "level_value": "0.4",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "15",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "40",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.01",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.02",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.04",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.07",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.1",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.2",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        },
+        {
+            "level_value": "0.7",
+            "level_description": "Isobaric surface",
+            "level": "ISBL",
+            "units": "mbar"
+        }
+    ],
+    "GCMD_uuid": "427e5121-a142-41cb-a8e9-a70b7f98eb6a",
+    "units": "kg kg^-1",
+    "start_date": 201501160000
+}

@@ -1,0 +1,110 @@
+
+HOW TO DOWNLOAD THE NASA AIRATHON CHALLENGE PARTICULATE TRACK REMOTE SENSING DATA
+
+-------------------------------------------------------
+
+Welcome to the NASA Airathon: Predict Air Quality challenge! These instructions will help you access the remote sensing data for the Particulate Track of this competition.
+
+The data folders for the competition are hosted on a public AWS S3 bucket. Data for the Particulate Track are contained in a folder called "pm25". Within "pm25", there are separate folders for "train" and "test". Each of these sets contains data for two satellite data products: "maiac" and "misr". Remote sensing data within these folders are organized by year.
+
+The following directory structure is used for the Particulate Track:
+
+|--- pm25
+|    |--- train
+|    |    |--- maiac
+|    |    |    |___ <years>
+|    |    |         |___ <files>
+|    |    |___ misr
+|    |         |___ <years>
+|    |              |___ <files>
+|    |___ test
+|         |--- maiac
+|         |    |___ <years>
+|         |         |___ <files>
+|         |___ misr
+|              |___ <years>
+|                   |___ <files>
+
+Note the size of each subdirectory:
+
+	dataset                 | n     | size
+    -------------------------------------------
+	pm25/train/maiac/       | 4260  | 35.1GB
+	pm25/train/misr/        |  788  | 27.3GB
+	pm25/test/maiac/        | 2444  | 20.3GB
+	pm25/test/misr/         |  229  |  7.9GB
+
+Data folders can be downloaded from the following links:
+
+    - train: s3://drivendata-competition-airathon-public-us/pm25/train/
+    - test: s3://drivendata-competition-airathon-public-us/pm25/test/
+
+The remote sensing data files are named `{time_end}_{product}_{location}_{number}.ext`, where `time_end` is formatted as `YYYYMMDDTHHmmss`. In rare cases, locations and times may have more than one associated file. When this occurs, file number is denoted by `number`. For instance, `20191230T194148_misr_la_0.nc` represents first data file from the Los Angeles South Coast Air Basin collected by MISR on December 30, 2019 at 7:41pm UTC.
+
+
+## Regional buckets
+
+The bucket listed above is in the US East AWS Region. The same data is also hosted on AWS buckets in the EU (Frankfurt) and Asia (Singapore). To get the fastest download times, download from the bucket closest to you.
+
+To access buckets other than the default US East bucket, simply append "-as" or "-eu" to the end of the bucket name. For the train data, rather than "s3://drivendata-competition-airathon-public-us/pm25/train/", use one of the following:
+
+    s3://drivendata-competition-airathon-public-eu/pm25/train/
+    s3://drivendata-competition-airathon-public-as/pm25/train/
+
+
+## AWS CLI
+
+The easiest way to download data from AWS is using the AWS CLI:
+
+    https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+
+To download an individual data file to your local machine, the general structure is
+
+    aws s3 cp <S3 URI> <local path> --no-sign-request
+
+For example:
+
+    aws s3 cp s3://drivendata-competition-airathon-public-us/pm25/train/misr/2019/20191230T194148_misr_la_0.nc ./ --no-sign-request
+
+The above downloads the file `20191230T194148_misr_la_0.nc` from the public bucket in the US region. Adding "--no-sign-request" allows data to be downloaded without configuring an AWS profile.
+
+To download a directory rather than a file, use the `--recursive` flag. For example, to download all of the training data:
+
+    aws s3 cp s3://drivendata-competition-airathon-public-us/pm25/train/ train/ --no-sign-request --recursive
+
+To download only a subset of the data, use the `--exclude` and `--include` flags. For example, to download only the data from Los Angeles use:
+
+    aws s3 cp s3://drivendata-competition-airathon-public-us/pm25/train/ train/ --no-sign-request --recursive --exclude="*" --include="*la.nc"
+
+See the AWS CLI docs for more details on how to use filters and other flags:
+
+    https://docs.aws.amazon.com/cli/latest/reference/s3/#use-of-exclude-and-include-filters
+
+
+## Satellite metadata
+
+We have also provided a "pm25_satellite_metadata.csv" file on the "Data Download" page that contains metadata about hosted satellite data. This may be useful if you want to write a script for downloading. The metadata file also includes file hashes that can be used to verify the integrity of a downloaded file. Hashes are generated using the default cksum hash function.
+
+Note that each file for a particular dataset is referred to as a `granule`. The metadata csv contains the following columns:
+
+    - `granule_id` (str): the filename for each granule
+    - `time_start` (datetime): the start time of the granule in YYYY-DD-MMTHH:mm:ss.sssZ
+    - `time_end` (datetime): the end time of the granule in YYYY-DD-MMTHH:mm:ss.sssZ
+    - `product` (str): concise name for satellite data source
+    - `location` (str): one of the three locations for this challenge
+    - `us_url` (str): file location of the granule in the public s3 bucket in the US East (N. Virginia) region
+    - `eu_url` (str): file location of the granule in the public s3 bucket in the Europe (Frankfurt) region
+    - `as_url` (str): file location of the granule in the public s3 bucket in the Asia Pacific (Singapore) region
+    - `cksum` (int): the result of running the unix cksum command on the granule
+    - `granule_size` (int): the filesize in bytes
+
+To check that your data was not corrupted during download, you can generate your own hashes at the command line and compare them to the metadata. For example, we know from the metadata that the hash for the file "20191230T194148_misr_la_0.nc" is 2405141695 and the byte count is 32288381. To generate a checksum value for a locally saved version:
+
+	$ cksum test/20191230T194148_misr_la_0.nc
+	2405141695 32288381 test/20191230T194148_misr_la_0.nc
+
+##
+
+Good luck! If you have any questions you can always visit the user forum at:
+
+	https://community.drivendata.org/c/airathon/51

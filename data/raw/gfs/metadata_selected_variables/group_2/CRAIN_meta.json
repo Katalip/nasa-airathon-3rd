@@ -1,0 +1,72 @@
+    [{
+        "product": "6-hour Average (initial+0 to initial+6)",
+        "param_description": "Categorical rain (yes=1; no=0)",
+        "end_date": 202203051800,
+        "level": null,
+        "native_format": "WMO_GRIB2",
+        "gridproj": "latLon",
+        "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+        "param": "CRAIN",
+        "levels": [
+            {
+                "level_description": "Ground or water surface",
+                "level": "SFC",
+                "level_value": "0"
+            }
+        ],
+        "start_date": 201501150000
+    },
+    {
+        "product": "6-hour Average (initial+6 to initial+12)",
+        "param_description": "Categorical rain (yes=1; no=0)",
+        "end_date": 202203060000,
+        "level": null,
+        "native_format": "WMO_GRIB2",
+        "gridproj": "latLon",
+        "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+        "param": "CRAIN",
+        "levels": [
+            {
+                "level_description": "Ground or water surface",
+                "level": "SFC",
+                "level_value": "0"
+            }
+        ],
+        "start_date": 201501150600
+    },
+    {
+        "product": "6-hour Average (initial+12 to initial+18)",
+        "param_description": "Categorical rain (yes=1; no=0)",
+        "end_date": 202203060600,
+        "level": null,
+        "native_format": "WMO_GRIB2",
+        "gridproj": "latLon",
+        "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+        "param": "CRAIN",
+        "levels": [
+            {
+                "level_description": "Ground or water surface",
+                "level": "SFC",
+                "level_value": "0"
+            }
+        ],
+        "start_date": 201501151200
+    },
+    {
+        "product": "6-hour Average (initial+18 to initial+24)",
+        "param_description": "Categorical rain (yes=1; no=0)",
+        "end_date": 202203061200,
+        "level": null,
+        "native_format": "WMO_GRIB2",
+        "gridproj": "latLon",
+        "griddef": "1440:721:90N:0E:90S:359.75E:0.25:0.25",
+        "param": "CRAIN",
+        "levels": [
+            {
+                "level_description": "Ground or water surface",
+                "level": "SFC",
+                "level_value": "0"
+            }
+        ],
+        "start_date": 201501151800
+    }]
