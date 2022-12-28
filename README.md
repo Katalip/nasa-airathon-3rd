@@ -272,6 +272,7 @@ Pickled Random Forest Regrossor weighs around 30 Mb, while GBR 200 Kb.
 From the competition page: 
 ```A note on time: Keep in mind, estimates should only factor in data available at the time of inference (training data excluded). You may only use data that would be available up through the day of estimation when generating predictions. Use of any future data after the day of estimation, excluding training data, is prohibited.```
 
+
 All categorical encodings and computed features are available at the time of inference for the given data. 
  From the competition page reagrding datetime in train_labels.csv/submission_format.csv: 
  ```
